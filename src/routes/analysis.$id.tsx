@@ -26,7 +26,7 @@ function Row({ label, value }: { label: string; value: string }) {
 
 function DetectionDetail() {
   const { id } = Route.useParams();
-  const det = detections.find((d) => d.id === id) ?? detections[0];
+  const det = detections.find((d) => d.id === id) ?? detections[0]!;
 
   return (
     <AppShell step="04" title="Detection Detail" subtitle={`${det.id} · ${det.type}`}>
