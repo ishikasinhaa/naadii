@@ -211,7 +211,14 @@ function Upload() {
             </Link>
             <Link
               to="/analysis"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:shadow-[var(--shadow-glow)]"
+              disabled={!file}
+              aria-disabled={!file}
+              onClick={(e) => {
+                if (!file) e.preventDefault();
+              }}
+              className={`inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-all ${
+                file ? "hover:shadow-[var(--shadow-glow)]" : "pointer-events-none opacity-40"
+              }`}
             >
               Begin Ocean Analysis <ArrowRight className="h-4 w-4" />
             </Link>
