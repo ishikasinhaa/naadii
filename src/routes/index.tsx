@@ -19,13 +19,13 @@ import { Logo } from "@/components/deepscan/Logo";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "DEEPSCAN — Exploring the Ocean. Protecting our Future." },
+      { title: "NAADI — Exploring the Ocean. Protecting our Future." },
       {
         name: "description",
         content:
           "Advanced sonar imaging and AI classification that detects ocean debris and helps protect vulnerable marine ecosystems.",
       },
-      { property: "og:title", content: "DEEPSCAN — Sonar AI Ocean Debris Detection" },
+      { property: "og:title", content: "NAADI — Sonar AI Ocean Debris Detection" },
       {
         property: "og:description",
         content:
@@ -158,7 +158,7 @@ function Landing() {
               Protecting our <span className="text-primary text-glow">Future.</span>
             </h1>
             <p className="mt-8 max-w-md text-base leading-relaxed text-foreground/70">
-              DEEPSCAN uses advanced sonar imaging and AI classification to detect ocean debris and
+              NAADI uses advanced sonar imaging and AI classification to detect ocean debris and
               help protect vulnerable marine ecosystems.
             </p>
             <Link

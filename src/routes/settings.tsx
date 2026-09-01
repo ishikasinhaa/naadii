@@ -5,10 +5,10 @@ import { AppShell, SectionCard } from "@/components/deepscan/AppShell";
 export const Route = createFileRoute("/settings")({
   head: () => ({
     meta: [
-      { title: "Settings — DEEPSCAN" },
-      { name: "description", content: "Manage your DEEPSCAN profile, notifications, detection defaults and security." },
-      { property: "og:title", content: "Settings — DEEPSCAN" },
-      { property: "og:description", content: "Manage your DEEPSCAN profile, notifications, detection defaults and security." },
+      { title: "Settings — NAADI" },
+      { name: "description", content: "Manage your NAADI profile, notifications, detection defaults and security." },
+      { property: "og:title", content: "Settings — NAADI" },
+      { property: "og:description", content: "Manage your NAADI profile, notifications, detection defaults and security." },
     ],
   }),
   component: SettingsPage,

@@ -6,9 +6,9 @@ import { scans } from "@/lib/mock-data";
 export const Route = createFileRoute("/history")({
   head: () => ({
     meta: [
-      { title: "Scan History — DEEPSCAN" },
+      { title: "Scan History — NAADI" },
       { name: "description", content: "Searchable archive of completed sonar scans and their top debris classes." },
-      { property: "og:title", content: "Scan History — DEEPSCAN" },
+      { property: "og:title", content: "Scan History — NAADI" },
       { property: "og:description", content: "Searchable archive of completed sonar scans and their top debris classes." },
     ],
   }),
@@ -24,7 +24,7 @@ const classIcon: Record<string, typeof Trash> = {
 
 function HistoryPage() {
   return (
-    <AppShell step="06" title="Scan History" subtitle="Every survey processed by the DEEPSCAN pipeline">
+    <AppShell step="06" title="Scan History" subtitle="Every survey processed by the NAADI pipeline">
       <SectionCard>
         <div className="flex flex-wrap items-center gap-3">
           <div className="relative min-w-[220px] flex-1">

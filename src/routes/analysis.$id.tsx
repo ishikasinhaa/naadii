@@ -6,9 +6,9 @@ import { detections } from "@/lib/mock-data";
 export const Route = createFileRoute("/analysis/$id")({
   head: () => ({
     meta: [
-      { title: "Detection Detail — DEEPSCAN" },
+      { title: "Detection Detail — NAADI" },
       { name: "description", content: "Inspect a single sonar detection with classification, confidence and geolocation." },
-      { property: "og:title", content: "Detection Detail — DEEPSCAN" },
+      { property: "og:title", content: "Detection Detail — NAADI" },
       { property: "og:description", content: "Inspect a single sonar detection with classification, confidence and geolocation." },
     ],
   }),

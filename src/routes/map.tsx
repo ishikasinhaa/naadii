@@ -6,9 +6,9 @@ import { detections, kindColor } from "@/lib/mock-data";
 export const Route = createFileRoute("/map")({
   head: () => ({
     meta: [
-      { title: "Map Tracker — DEEPSCAN" },
+      { title: "Map Tracker — NAADI" },
       { name: "description", content: "Geospatial tracker of debris detections along survey routes." },
-      { property: "og:title", content: "Map Tracker — DEEPSCAN" },
+      { property: "og:title", content: "Map Tracker — NAADI" },
       { property: "og:description", content: "Geospatial tracker of debris detections along survey routes." },
     ],
   }),

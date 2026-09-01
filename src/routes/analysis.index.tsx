@@ -5,9 +5,9 @@ import { AppShell } from "@/components/deepscan/AppShell";
 export const Route = createFileRoute("/analysis/")({
   head: () => ({
     meta: [
-      { title: "Processing Pipeline — DEEPSCAN" },
+      { title: "Processing Pipeline — NAADI" },
       { name: "description", content: "Track sonar scans through preprocessing, AI analysis and debris classification." },
-      { property: "og:title", content: "Processing Pipeline — DEEPSCAN" },
+      { property: "og:title", content: "Processing Pipeline — NAADI" },
       { property: "og:description", content: "Track sonar scans through preprocessing, AI analysis and debris classification." },
     ],
   }),
