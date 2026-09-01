@@ -34,7 +34,7 @@ export function Logo({ to = "/" }: { to?: string }) {
     <Link to={to} className="flex items-center gap-3">
       <SonarMark />
       <span className="flex flex-col leading-none">
-        <span className="text-lg font-semibold tracking-[0.18em] text-foreground">DEEPSCAN</span>
+        <span className="text-lg font-semibold tracking-[0.18em] text-foreground">NAADI</span>
         <span className="mt-1 text-[9px] font-medium tracking-[0.24em] whitespace-nowrap text-muted-foreground">
           SONAR AI DETECTION
         </span>

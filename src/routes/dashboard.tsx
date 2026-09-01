@@ -7,9 +7,9 @@ import { debrisBreakdown, scans } from "@/lib/mock-data";
 export const Route = createFileRoute("/dashboard")({
   head: () => ({
     meta: [
-      { title: "Mission Dashboard — DEEPSCAN" },
+      { title: "Mission Dashboard — NAADI" },
       { name: "description", content: "Live overview of sonar surveys, debris detections and AI confidence." },
-      { property: "og:title", content: "Mission Dashboard — DEEPSCAN" },
+      { property: "og:title", content: "Mission Dashboard — NAADI" },
       { property: "og:description", content: "Live overview of sonar surveys, debris detections and AI confidence." },
     ],
   }),

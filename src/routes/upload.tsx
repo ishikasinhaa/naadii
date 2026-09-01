@@ -5,9 +5,9 @@ import { AppShell, SectionCard } from "@/components/deepscan/AppShell";
 export const Route = createFileRoute("/upload")({
   head: () => ({
     meta: [
-      { title: "Upload Sonar Scan — DEEPSCAN" },
+      { title: "Upload Sonar Scan — NAADI" },
       { name: "description", content: "Upload side-scan sonar imagery and set mission parameters for AI analysis." },
-      { property: "og:title", content: "Upload Sonar Scan — DEEPSCAN" },
+      { property: "og:title", content: "Upload Sonar Scan — NAADI" },
       { property: "og:description", content: "Upload side-scan sonar imagery and set mission parameters for AI analysis." },
     ],
   }),

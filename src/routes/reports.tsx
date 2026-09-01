@@ -7,9 +7,9 @@ import { debrisBreakdown } from "@/lib/mock-data";
 export const Route = createFileRoute("/reports")({
   head: () => ({
     meta: [
-      { title: "Report & Export — DEEPSCAN" },
+      { title: "Report & Export — NAADI" },
       { name: "description", content: "Preview and export ocean debris analysis reports as PDF or image." },
-      { property: "og:title", content: "Report & Export — DEEPSCAN" },
+      { property: "og:title", content: "Report & Export — NAADI" },
       { property: "og:description", content: "Preview and export ocean debris analysis reports as PDF or image." },
     ],
   }),
@@ -60,7 +60,7 @@ function Reports() {
           <div className="rounded-xl bg-white p-7 text-[#0b1622] shadow-[var(--shadow-card)]">
             <div className="flex items-center justify-between border-b border-[#dbe4ec] pb-4">
               <div>
-                <p className="text-lg font-semibold tracking-[0.18em]">DEEPSCAN</p>
+                <p className="text-lg font-semibold tracking-[0.18em]">NAADI</p>
                 <p className="text-[10px] tracking-[0.22em] text-[#5b6b7c]">SONAR AI DETECTION</p>
               </div>
               <div className="text-right text-[11px] text-[#5b6b7c]">
