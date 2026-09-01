@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { UploadCloud, ShieldCheck, ArrowRight } from "lucide-react";
+import { UploadCloud, ShieldCheck, ArrowRight, X, FileImage } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { AppShell, SectionCard } from "@/components/deepscan/AppShell";
 
 export const Route = createFileRoute("/upload")({
