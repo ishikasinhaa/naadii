@@ -93,23 +93,25 @@ function Dashboard() {
           <SectionCard title="Debris Breakdown">
             <div className="flex items-center gap-4">
               <div className="h-[140px] w-[140px] shrink-0">
-                <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
-                    <Pie
-                      data={debrisBreakdown}
-                      dataKey="value"
-                      innerRadius={44}
-                      outerRadius={66}
-                      paddingAngle={3}
-                      stroke="none"
-                    >
-                      {debrisBreakdown.map((d) => (
-                        <Cell key={d.name} fill={d.color} />
-                      ))}
-                    </Pie>
-                  </PieChart>
-                </ResponsiveContainer>
+                <PieChart width={140} height={140}>
+                  <Pie
+                    data={debrisBreakdown}
+                    dataKey="value"
+                    cx={70}
+                    cy={70}
+                    innerRadius={44}
+                    outerRadius={66}
+                    paddingAngle={3}
+                    stroke="none"
+                    isAnimationActive={false}
+                  >
+                    {debrisBreakdown.map((d) => (
+                      <Cell key={d.name} fill={d.color} />
+                    ))}
+                  </Pie>
+                </PieChart>
               </div>
+
               <ul className="space-y-2 text-xs">
                 {debrisBreakdown.map((d) => (
                   <li key={d.name} className="flex items-center gap-2 text-foreground/80">

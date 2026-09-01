@@ -178,7 +178,7 @@ function Landing() {
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl badge-ring">
                   <s.icon className="h-5 w-5 text-primary" strokeWidth={1.5} />
                 </span>
-                <div className="min-w-[130px]">
+                <div className="w-[132px] shrink-0">
                   <p className="text-xl font-semibold text-foreground">{s.value}</p>
                   <p className="text-xs text-foreground/60">{s.label}</p>
                 </div>

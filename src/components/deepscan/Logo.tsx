@@ -35,9 +35,10 @@ export function Logo({ to = "/" }: { to?: string }) {
       <SonarMark />
       <span className="flex flex-col leading-none">
         <span className="text-lg font-semibold tracking-[0.18em] text-foreground">DEEPSCAN</span>
-        <span className="mt-1 text-[10px] font-medium tracking-[0.26em] text-muted-foreground">
+        <span className="mt-1 text-[9px] font-medium tracking-[0.24em] whitespace-nowrap text-muted-foreground">
           SONAR AI DETECTION
         </span>
+
       </span>
     </Link>
   );
