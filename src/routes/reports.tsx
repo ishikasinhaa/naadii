@@ -134,15 +134,15 @@ function Reports() {
     <AppShell step="07" title="Report & Export" subtitle="Publish mission findings for stakeholders">
       <div className="grid gap-6 xl:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]">
         <SectionCard title="Report Preview">
-          <div className="rounded-xl bg-white p-7 text-[#0b1622] shadow-[var(--shadow-card)]">
+          <div ref={cardRef} className="rounded-xl bg-white p-7 text-[#0b1622] shadow-[var(--shadow-card)]">
             <div className="flex items-center justify-between border-b border-[#dbe4ec] pb-4">
               <div>
                 <p className="text-lg font-semibold tracking-[0.18em]">NAADI</p>
                 <p className="text-[10px] tracking-[0.22em] text-[#5b6b7c]">SONAR AI DETECTION</p>
               </div>
               <div className="text-right text-[11px] text-[#5b6b7c]">
-                <p>Report ID: RPT-2026-0428</p>
-                <p>2026-08-28 · 09:42 UTC</p>
+                <p>Report ID: {REPORT_ID}</p>
+                <p>{REPORT_DATE}</p>
               </div>
             </div>
 
@@ -202,7 +202,11 @@ function Reports() {
           <ul className="space-y-3">
             {exportOptions.map((o) => (
               <li key={o.title}>
-                <button className="flex w-full items-center gap-4 rounded-xl border border-border bg-surface/50 p-4 text-left transition-colors hover:border-primary/50">
+                <button
+                  type="button"
+                  onClick={o.onClick}
+                  className="flex w-full items-center gap-4 rounded-xl border border-border bg-surface/50 p-4 text-left transition-colors hover:border-primary/50"
+                >
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl badge-ring">
                     <o.icon className="h-5 w-5 text-primary" strokeWidth={1.4} />
                   </span>
