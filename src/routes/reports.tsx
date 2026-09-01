@@ -103,22 +103,21 @@ function Reports() {
                 </dl>
               </div>
               <div className="h-[150px]">
-                <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
-                    <Pie
-                      data={debrisBreakdown}
-                      dataKey="value"
-                      innerRadius={42}
-                      outerRadius={70}
-                      paddingAngle={3}
-                      stroke="none"
-                    >
-                      {debrisBreakdown.map((d) => (
-                        <Cell key={d.name} fill={d.color} />
-                      ))}
-                    </Pie>
-                  </PieChart>
-                </ResponsiveContainer>
+                <PieChart width={150} height={150}>
+                  <Pie
+                    data={debrisBreakdown}
+                    dataKey="value"
+                    innerRadius={42}
+                    outerRadius={70}
+                    paddingAngle={3}
+                    stroke="none"
+                    isAnimationActive={false}
+                  >
+                    {debrisBreakdown.map((d) => (
+                      <Cell key={d.name} fill={d.color} />
+                    ))}
+                  </Pie>
+                </PieChart>
               </div>
             </div>
           </div>
