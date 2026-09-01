@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FileText, FileImage, Share2 } from "lucide-react";
-import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts";
+import { useRef } from "react";
+import { toast } from "sonner";
+import { Cell, Pie, PieChart } from "recharts";
 import { AppShell, SectionCard } from "@/components/deepscan/AppShell";
 import { debrisBreakdown } from "@/lib/mock-data";
 
