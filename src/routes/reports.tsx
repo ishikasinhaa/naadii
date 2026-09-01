@@ -13,8 +13,9 @@ export const Route = createFileRoute("/reports")({
       { property: "og:description", content: "Preview and export ocean debris analysis reports as PDF or image." },
     ],
   }),
-  component: Reports;
+  component: Reports,
 });
+
 
 function ScanStrip() {
   return (
